@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website using html & css </title>
+    <link rel="stylesheet" href="webcss.css">
+</head>
+<body>
+    
+    <section id="header">
+    <div class="container">
+        <img src="image/logo.png"  class="logo">
+
+            <div class="header-text">
+            <h1>The purpose is to <br>teach ,bring learning to people</h1>
+            
+            <span class="square">  </span>
+            <p> We work together to transform teaching and learning so that every student and 
+                educator can pursue their personal potential</p>
+                <button class="common-btn">Read More</button>
+                <div class="line">
+                    <span class="line-1">  </span> <br>
+                    <span class="line-2">  </span> <br>
+                    <span class="line-3">  </span> <br>
+                </div>
+            </div>      
+    </div>
+    </section>
+
+    <nav id="sideNav">
+        <ul>
+             <li> <a href="#"> HOME </a> </li>
+             <li> <a href="#"> ABOUT US </a> </li>
+             <li> <a href="#"> FEATURES </a> </li>
+             <li> <a href="#"> COURSES </a> </li>
+             <li> <a href="#"> OFFER </a> </li>
+             <li> <a href="#"> CONTACT </a> </li>
+         </ul>
+     </nav>
+     <img src="image/menu.png"  id="menuBtn">
+
+
+     <!--about-->
+
+     <section id="about">
+        <div class="about-left-col">
+            <img src="image/about.png">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About Us</h1>
+                <span class="square"> </span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus suscipit explicabo
+                     odit magni 
+                    iure ex quis aperiam placeat, 
+                    hic eius eaque, asperiores porro impedit excepturi doloremque, facilis quia illo est.</p><br><br>
+                    <div class="line">
+                            <span class="line-1">  </span> <br>
+                            <span class="line-2">  </span> <br>
+                            <span class="line-3">  </span> <br>
+                    </div>
+
+                    <h2>"Learning is not attained by chance,it must be sought for with ardor and attended to 
+                        with diligence"</h2>
+
+                    <h3>---Abigail Adams </h3>
+                
+            </div>
+        </div>
+     </section>
+
+     <!--features-->
+
+     <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">    
+              <img src="image/pic-1.png">
+              <h4>Learn Anywhere</h4>
+              <p>Switch between your computer,tablet or mobile device.</p>
+            </div>   
+        <div class="feature-col">
+            <img src="image/pic-2.png">
+            <h4>Expert Teacher</h4>
+            <p>Learning from industry experts who are passionate about teaching.</p>
+        </div>
+        <div class="feature-col">
+            <img src="image/pic-3.png">
+            <h4>Unlimited Access</h4>
+            <p>Choose what you'd like to learn from our extensive subscription library</p>
+        </div>
+        </div>
+        <div class="feature-btn">
+                <div class="line">
+                    <span class="line-1">  </span> <br>
+                    <span class="line-2">  </span> <br>
+                    <span class="line-3">  </span> <br>
+                </div>
+                
+        
+            <button class="common-btn">Start free Trial</button>
+        </div>
+    </section>
+
+    <section>
+    <div class="container course-row">
+        <div class="course-left-col">
+            <div class="course-text">
+                <h1> Browse our top<br> courses</h1>
+                    <p>ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Deserunt aliquid consequatur atque ab quo natus obcaecati itaque consectetur 
+                    </p> 
+            </div>
+        </div>
+    </div>
+    <div class="course-right-col">
+        <img src="image/course.png">
+    </div>
+</div>
+</section>
+
+
+
+     
+
+     <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px")
+            {
+                sideNav.style.right = "0px";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+
+     </script>
+</body>
+</html>
